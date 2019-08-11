@@ -9,7 +9,7 @@ The goal of this project is to reduce the number of steps required in order to u
 
 Due to the cross-language nature of this task, creating a single drop-in library to handle all cases would be difficult. Therefore, I've broken down the task into as few steps as possible.
 
-Most of the original legwork of figuring out how to share on iOS and Android came from this extremely useful series of [blog posts (Sharing Files on Android or iOS from your Qt App](https://blog.qt.io/blog/2017/12/01/sharing-files-android-ios-qt-app/) by Ekkehard Gentz. If you are interested in _how_ the sharing works, this is a great place to look for more information.
+Most of the original legwork of figuring out how to share on iOS and Android came from this extremely useful series of [blog posts (Sharing Files on Android or iOS from your Qt App)](https://blog.qt.io/blog/2017/12/01/sharing-files-android-ios-qt-app/) by Ekkehard Gentz. If you are interested in _how_ the sharing works, this is a great place to look for more information.
 
 ### Glossary
 
