@@ -1,5 +1,5 @@
 
-### ShareUtils
+### Qt Mobile ShareUtils
 
 The goal of this project is to reduce the number of steps required in order to utilize native share interfaces on iOS and Android with Qt. In order to do this you will need to:
 - Update the app's permission to enable sharing files.
