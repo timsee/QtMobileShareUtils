@@ -19,3 +19,6 @@ Most of the original legwork of figuring out how to share on iOS and Android cam
 ### <a name="pre-reqs"></a>Pre-reqs
 
 This project assumes that you have already successfully built a Qt application for iOS and Android. If this hasn't been done yet, check here for getting started documentation on [Android](https://doc.qt.io/qt-5/android-getting-started.html), and here for [iOS](https://doc.qt.io/qt-5/ios.html)
+
+
+![android send](resources/android_mobile_share.png  "android send") ![iOS receive](resources/ios_mobile_share.png "iOS receive")
