@@ -20,5 +20,6 @@ Most of the original legwork of figuring out how to share on iOS and Android cam
 
 This project assumes that you have already successfully built a Qt application for iOS and Android. If this hasn't been done yet, check here for getting started documentation on [Android](https://doc.qt.io/qt-5/android-getting-started.html), and here for [iOS](https://doc.qt.io/qt-5/ios.html).
 
+This project also assumes you are using Qt 5.13 or later. Qt android builds [changed in 5.13](https://www.qt.io/blog/2019/06/28/comply-upcoming-requirements-google-play), making backwards compatibility difficult.
 
 ![android send](resources/android_mobile_share.png  "android send") ![iOS receive](resources/ios_mobile_share.png "iOS receive")

@@ -1,37 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0"?>
 <manifest package="org.qtproject.example.ShareUtils" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" android:installLocation="auto">
     <application android:hardwareAccelerated="true" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:label="ShareUtils">
-        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation"
-                  android:name="org.shareluma.activity.QShareActivity"
-                  android:label="ShareUtils"
-                  android:screenOrientation="unspecified"
-                  android:launchMode="singleTop">
+        <activity android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|layoutDirection|locale|fontScale|keyboard|keyboardHidden|navigation" android:name="org.shareluma.activity.QShareActivity" android:label="ShareUtils" android:screenOrientation="unspecified" android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
 <!-- Beginning of Intent Filters for Sending and Viewing Files -->
-            <intent-filter>		
-                 <action android:name="android.intent.action.SEND"/>		
-                 <category android:name="android.intent.category.DEFAULT"/>		
-                 <data android:mimeType="image/*"/>		
-            </intent-filter>		
-            <intent-filter>		
-                 <action android:name="android.intent.action.VIEW"/>		
-                 <category android:name="android.intent.category.DEFAULT"/>		
-                 <data android:mimeType="image/png"/>		
-            </intent-filter>	
-            <intent-filter>		
-                 <action android:name="android.intent.action.VIEW"/>		
-                 <category android:name="android.intent.category.DEFAULT"/>		
-                 <data android:mimeType="image/jpg"/>		
+            <intent-filter>
+                 <action android:name="android.intent.action.SEND"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+                 <data android:mimeType="image/*"/>
             </intent-filter>
-            <intent-filter>		
-                 <action android:name="android.intent.action.VIEW"/>		
-                 <category android:name="android.intent.category.DEFAULT"/>		
-                 <data android:mimeType="image/jpeg"/>		
-            </intent-filter>	
+            <intent-filter>
+                 <action android:name="android.intent.action.VIEW"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+                 <data android:mimeType="image/png"/>
+            </intent-filter>
+            <intent-filter>
+                 <action android:name="android.intent.action.VIEW"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+                 <data android:mimeType="image/jpg"/>
+            </intent-filter>
+            <intent-filter>
+                 <action android:name="android.intent.action.VIEW"/>
+                 <category android:name="android.intent.category.DEFAULT"/>
+                 <data android:mimeType="image/jpeg"/>
+            </intent-filter>
 <!-- End of Intent Filters for Sending and Viewing Files -->
 
             <!-- Application arguments -->
@@ -90,29 +86,23 @@
 
     <!-- For adding service(s) please check: https://wiki.qt.io/AndroidServices -->
 
-    <provider		
-          android:name="android.support.v4.content.FileProvider"		
-          android:authorities="org.shareluma.shareutils.fileprovider"		
-          android:exported="false"		
-          android:grantUriPermissions="true">		
-          <meta-data		
-               android:name="android.support.FILE_PROVIDER_PATHS"		
-               android:resource="@xml/filepaths"/>		
+    <provider android:name="android.support.v4.content.FileProvider" android:authorities="org.shareluma.shareutils.fileprovider" android:exported="false" android:grantUriPermissions="true">
+          <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
     </provider>
 
     </application>
 
-    <uses-sdk android:minSdkVersion="18" />
+    <uses-sdk android:minSdkVersion="22" android:targetSdkVersion="26"/>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:anyDensity="true" android:smallScreens="true"/>
 
     <!-- The following comment will be replaced upon deployment with default permissions based on the dependencies of the application.
          Remove the comment if you do not require these default permissions. -->
-        <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 
     <!-- The following comment will be replaced upon deployment with default features based on the dependencies of the application.
          Remove the comment if you do not require these default features. -->
-    
+
 
 </manifest>

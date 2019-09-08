@@ -22,6 +22,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 CONFIG += c++11
 
+# check for proper version of Qt
+message("DEBUG: Qt Version: $$QT_MAJOR_VERSION _ $$QT_MINOR_VERSION arch: $$QT_ARCH " )
+equals (QT_MAJOR_VERSION, 5)  {
+  !greaterThan(QT_MINOR_VERSION, 12) {
+    error(ERROR: Qt5 is installed, but it is not a recent enough version. This project uses QT5.13 or later)
+  }
+}
+!equals(QT_MAJOR_VERSION, 5) {
+    error(ERROR: Qt5 is not installed. This project uses QT5.13 or later)
+}
+
 #--------
 # Android and iOS setup
 #--------
